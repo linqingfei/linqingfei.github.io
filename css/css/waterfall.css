@@ -1,0 +1,111 @@
+.waterfall-wrapper {
+  padding: 0 0.16rem 0.5333rem;
+  /* 弹性布局 */
+  display: flex;
+  justify-content: center;
+}
+.waterfall-wrapper .waterfall {
+  position: relative;
+  margin: 0 auto;
+}
+.waterfall-wrapper .waterfall .item {
+  float: left;
+  padding: 0 0.16rem 0.2667rem;
+  box-sizing: border-box;
+  width: 4.5333rem;
+  overflow: hidden;
+}
+.waterfall-wrapper .waterfall .item .item-content {
+  border-radius: 0.2667rem;
+  overflow: hidden;
+}
+.waterfall-wrapper .waterfall .item .item-content .pic {
+  /* padding: 10px; */
+  /* width: 130px; */
+  overflow: hidden;
+}
+.waterfall-wrapper .waterfall .item .item-content .city-wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 0.2133rem;
+  top: 0.2133rem;
+  height: 0.5333rem;
+  padding: 0 0.16rem;
+  border-radius: 0.2667rem;
+}
+.waterfall-wrapper .waterfall .item .item-content .city-wrapper .icon {
+  width: 0.2667rem;
+  height: 0.2667rem;
+  background: url(../../assets/icons/location-icon.png);
+  background-size: contain;
+  margin-right: 0.0533rem;
+}
+.waterfall-wrapper .waterfall .item .item-content .city-wrapper .city-name {
+  color: #FFFAFA;
+  font-size: 0.2933rem;
+}
+.waterfall-wrapper .waterfall .item .item-content .goods-info {
+  background-color: #fff;
+  padding: 0.2667rem 0.2667rem 0;
+}
+.waterfall-wrapper .waterfall .item .item-content .goods-info .goods-title {
+  font-size: 0.32rem;
+  color: #2A2D34;
+  font-weight: 700;
+}
+.waterfall-wrapper .waterfall .item .item-content .goods-info .price-want {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.2133rem;
+}
+.waterfall-wrapper .waterfall .item .item-content .goods-info .price-want .price {
+  font-size: 0.3733rem;
+  color: #FD4E8E;
+}
+.waterfall-wrapper .waterfall .item .item-content .goods-info .price-want .want {
+  font-size: 0.2667rem;
+  color: #888C98;
+}
+.waterfall-wrapper .waterfall .item .item-content .user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 0.96rem;
+  padding: 0 0.2667rem;
+  background-color: #fff;
+}
+.waterfall-wrapper .waterfall .item .item-content .user-info .left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.waterfall-wrapper .waterfall .item .item-content .user-info .left .avatar {
+  width: 0.5333rem;
+  height: 0.5333rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.waterfall-wrapper .waterfall .item .item-content .user-info .left .name {
+  font-size: 0.32rem;
+  color: #737680;
+  margin-left: 0.1067rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.waterfall-wrapper .waterfall .item .item-content .user-info .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.waterfall-wrapper .waterfall .item .item-content .user-info .right img {
+  width: 0.4267rem;
+}
+.waterfall-wrapper .waterfall::after {
+  display: block;
+  content: '';
+  clear: both;
+}

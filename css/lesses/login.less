@@ -1,0 +1,104 @@
+// out: "../css/"
+
+.login-wrapper,
+.captcha-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  // height: 10.6667rem;
+  bottom: 0;
+  background-color: pink;
+  z-index: 99;
+  // filter: blur(90px);
+  // backdrop-filter: blur(1px);
+  padding: 0 .8rem;
+  background-color: rgba(60, 60, 60, 0.6);
+  backdrop-filter: blur(4px); //背景模糊
+  -webkit-backdrop-filter: blur(6px); //背景模糊
+  display: none;
+
+  // 关闭
+  .close-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 1.2rem;
+
+    a {
+      color: white;
+      font-size: .4267rem;
+    }
+  }
+
+  // hello-there
+  .hello-there {
+    margin-top: .4267rem;
+    font-size: .96rem;
+    font-weight: bold;
+
+    .hello {
+      color: #FAFCFF;
+    }
+
+    .there {
+      color: #FD4E8E;
+    }
+  }
+
+  //welcome
+  .welcome {
+    color: #FAFCFF;
+    font-weight: bold;
+    font-size: .5333rem;
+    margin-top: .2667rem;
+    letter-spacing: .0533rem;
+  }
+
+  //输入框
+  .input-wrapper {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 1.44rem;
+    border-radius: .72rem;
+    padding: 0 .4267rem;
+    margin-top: 1.0667rem;
+
+    input {
+      font-size: .48rem;
+      color: #fff;
+      height: 100%;
+      width: 100%;
+
+      &::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+
+  //register-tips
+  .register-tips {
+    font-size: .32rem;
+    color: #CDCDCD;
+    margin-top: .4267rem;
+  }
+
+  //获取验证码
+  .captcha-btn-wrapper,
+  .login-btn-wrapper {
+    height: 1.44rem;
+    background: linear-gradient(#FF99BF, #FD4E8E);
+    border-radius: .72rem;
+    overflow: hidden;
+    margin-top: .8rem;
+
+    a {
+      display: block;
+      height: 100%;
+      line-height: 1.44rem;
+      font-size: .48rem;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}

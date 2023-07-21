@@ -1,0 +1,96 @@
+.login-wrapper,
+.captcha-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: pink;
+  z-index: 99;
+  padding: 0 0.8rem;
+  background-color: rgba(60, 60, 60, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(6px);
+  display: none;
+}
+.login-wrapper .close-wrapper,
+.captcha-wrapper .close-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 1.2rem;
+}
+.login-wrapper .close-wrapper a,
+.captcha-wrapper .close-wrapper a {
+  color: white;
+  font-size: 0.4267rem;
+}
+.login-wrapper .hello-there,
+.captcha-wrapper .hello-there {
+  margin-top: 0.4267rem;
+  font-size: 0.96rem;
+  font-weight: bold;
+}
+.login-wrapper .hello-there .hello,
+.captcha-wrapper .hello-there .hello {
+  color: #FAFCFF;
+}
+.login-wrapper .hello-there .there,
+.captcha-wrapper .hello-there .there {
+  color: #FD4E8E;
+}
+.login-wrapper .welcome,
+.captcha-wrapper .welcome {
+  color: #FAFCFF;
+  font-weight: bold;
+  font-size: 0.5333rem;
+  margin-top: 0.2667rem;
+  letter-spacing: 0.0533rem;
+}
+.login-wrapper .input-wrapper,
+.captcha-wrapper .input-wrapper {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 1.44rem;
+  border-radius: 0.72rem;
+  padding: 0 0.4267rem;
+  margin-top: 1.0667rem;
+}
+.login-wrapper .input-wrapper input,
+.captcha-wrapper .input-wrapper input {
+  font-size: 0.48rem;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+.login-wrapper .input-wrapper input::-webkit-input-placeholder,
+.captcha-wrapper .input-wrapper input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.login-wrapper .register-tips,
+.captcha-wrapper .register-tips {
+  font-size: 0.32rem;
+  color: #CDCDCD;
+  margin-top: 0.4267rem;
+}
+.login-wrapper .captcha-btn-wrapper,
+.captcha-wrapper .captcha-btn-wrapper,
+.login-wrapper .login-btn-wrapper,
+.captcha-wrapper .login-btn-wrapper {
+  height: 1.44rem;
+  background: linear-gradient(#FF99BF, #FD4E8E);
+  border-radius: 0.72rem;
+  overflow: hidden;
+  margin-top: 0.8rem;
+}
+.login-wrapper .captcha-btn-wrapper a,
+.captcha-wrapper .captcha-btn-wrapper a,
+.login-wrapper .login-btn-wrapper a,
+.captcha-wrapper .login-btn-wrapper a {
+  display: block;
+  height: 100%;
+  line-height: 1.44rem;
+  font-size: 0.48rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}

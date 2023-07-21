@@ -1,0 +1,136 @@
+// out: "../css/"
+
+.waterfall-wrapper {
+  padding: 0 .16rem .5333rem;
+  // background-color: aliceblue;
+  /* 弹性布局 */
+  display: flex;
+  justify-content: center;
+
+  .waterfall{
+    position: relative;
+    margin: 0 auto;
+
+    .item{
+      float: left;
+      padding: 0 .16rem .2667rem;
+      // border: 1px solid blue;
+      box-sizing: border-box;
+      width: 4.5333rem;
+      overflow: hidden;
+
+      .item-content{
+        border-radius: .2667rem;
+        overflow: hidden;
+        .pic{
+          /* padding: 10px; */
+          // border: 1px solid #ccc;
+          // box-shadow: 0 0 5px #ccc;
+          /* width: 130px; */
+          overflow: hidden;
+        }
+  
+        // 城市信息
+        .city-wrapper{
+          display: flex;
+          align-items: center;
+          position: absolute;
+          background-color: rgba(0, 0, 0, 0.4);
+          left: .2133rem;
+          top: .2133rem;
+          height: .5333rem;
+          padding: 0 .16rem;
+          border-radius: .2667rem;
+  
+          .icon{
+            width: .2667rem;
+            height: .2667rem;
+            background: url(../../assets/icons/location-icon.png);
+            background-size: contain;
+            margin-right: .0533rem;
+          }
+  
+          .city-name{
+            color: #FFFAFA;
+            font-size: .2933rem;
+          }
+        }
+  
+        //商品信息
+        .goods-info{
+          background-color: #fff;
+          padding: .2667rem .2667rem 0;
+          // 商品标题
+          .goods-title{
+            font-size: .32rem;
+            color: #2A2D34;
+            font-weight: 700;
+          }
+  
+          .price-want{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: .2133rem;
+            .price{
+              font-size: .3733rem;
+              color: #FD4E8E;
+            }
+  
+            .want{
+              font-size: .2667rem;
+              color: #888C98;
+            }
+          }
+        }
+  
+        //用户信息
+        .user-info{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: .96rem;
+          padding: 0 .2667rem;
+          background-color: #fff;
+          .left{
+            display: flex;
+            align-items: center;
+            height: 100%;
+            // width: 100px;
+  
+            .avatar {
+              width: .5333rem;
+              height: .5333rem;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+  
+            .name {
+              font-size: .32rem;
+              color: #737680;
+              margin-left: .1067rem;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+  
+          .right{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+  
+            img{
+              width: .4267rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .waterfall::after{
+    display: block;
+    content: '';
+    clear: both;
+  }
+}

@@ -1,0 +1,12 @@
+.reg-banner-wrapper {
+  position: fixed;
+  bottom: 0.5333rem;
+  left: 0.4267rem;
+  right: 0.4267rem;
+  width: 9.0667rem;
+  margin: 0 auto;
+  z-index: 199;
+}
+.reg-banner-wrapper img {
+  width: 100%;
+}
